@@ -1,0 +1,84 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 21.12-s106_1 (64bit) 12/08/2021 18:19 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2025-Nov-28 23:58:39 (2025-Nov-28 18:28:39 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: onset_detector
+*
+*	Liberty Libraries used: 
+*	        BEST_CASE: /vlsi/pdk/course_pdk_2025/tsmc_gp_65_stdio/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a/tcbn65gplusbc_ccs.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:        1.1 
+*
+*       Power View : BEST_CASE
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile physical_design/power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.04171511 	   15.6811%
+Total Switching Power:       0.00790648 	    2.9721%
+Total Leakage Power:         0.21639980 	   81.3468%
+Total Power:                 0.26602139 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                       0.01916    0.001645     0.02116     0.04197       15.78 
+Macro                                  0           0           0           0           0 
+IO                                     0           0   0.0001438   0.0001438     0.05407 
+Physical-Only                          0           0      0.1227      0.1227       46.12 
+Combinational                    0.02256    0.006261      0.0724      0.1012       38.05 
+Clock (Combinational)                  0           0           0           0           0 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                            0.04172    0.007906      0.2164       0.266         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1    0.04172    0.007906      0.2164       0.266         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:            u2_mult10X8/g2 (CMPE42D1):         0.000957 
+*                Highest Leakage Power: u1_mult10X8/mul_6_24_cdnca_008_1__7410 (CMPE42D1):        0.0006214 
+*          Total Cap:      3.14269e-12 F
+*          Total instances in design:  1172
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:   552
+-----------------------------------------------------------------------------------------
+

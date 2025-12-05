@@ -1,0 +1,13 @@
+    Hinst Name           Module Name           Inst Count           Total Area
+---------------------------------------------------------------------------
+onset_detector                                        620             3353.400
+ u1_adder_16bit          adder_18bit                   18              155.880
+ u1_mult10X8             mult10X8                     127              723.240
+ u2_adder_16bit          adder_18bit_130               18              155.880
+ u2_mult10X8             mult10X8_132                 127              723.240
+ u_class1_top_channels   class1_top_channels           31              107.640
+ u_class2_top_channels   class2_top_channels           38              121.320
+ u_counter_gen           counter_gen                   28              186.840
+ u_dual_threshold_class1 dual_thresholding             61              322.560
+ u_dual_threshold_class2 dual_thresholding_131         60              320.760
+ u_mux8X1                mux8X1                        40              120.600
