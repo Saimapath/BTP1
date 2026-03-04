@@ -88,15 +88,15 @@ module mac_shift_1mult #(
         endcase
     end
 
-    initial begin
+   // initial begin
     
     // for (k = 0; k < kernel_width; k = k + 1) begin
     //     coeffs[k] = 4'd1;
     // end
-    for (k = 0; k < num_channels*kernel_width; k = k + 1) begin
-        partial_sum_reg[k] = 0;
-    end
-    end
+   // for (k = 0; k < num_channels*kernel_width; k = k + 1) begin
+        //partial_sum_reg[k] <= 0;
+   // end
+   // end
 
     assign in_ready = (tap_num == 15);
 
@@ -107,6 +107,11 @@ module mac_shift_1mult #(
             addin_next <= 0;
             x_reg <= 0;
              Sut <= 0;
+
+	 for (k = 0; k < num_channels*kernel_width; k = k + 1) begin
+        partial_sum_reg[k] <= 0;
+    end
+
         end else begin
             
             // Store the result of this tap's calculation back into the
